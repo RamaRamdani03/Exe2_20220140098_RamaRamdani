@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hotel Horison</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Gaya untuk navbar */
+        .navbar {
+            background-color: #343a40;
+        }
+        /* Gaya untuk judul navbar */
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        /* Gaya untuk link navbar */
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+        /* Hover efek untuk link navbar */
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-hotel"></i> Hotel Horison
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="mb-4">Reservation</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="NoTlpn">Phone Number</label>
+                <input type="text" class="form-control" id="NoTlpn" required>
+            </div>
+            <div class="form-group">
+                <label for="tgl">Date</label>
+                <input type="date" class="form-control" id="tgl" required>
+            </div>
+            <div class="form-check mt-3">
+                <input class="form-check-input" type="radio" name="reservationType" id="kamar" value="kamar" required>
+                <label class="form-check-label" for="kamar">Room</label>
+            </div>
+            <div class="form-check mt-3">
+                <input class="form-check-input" type="radio" name="reservationType" id="meetingroom" value="meetingroom" required>
+                <label class="form-check-label" for="meetingroom">Meeting Room</label>
+            </div>
+            <div class="form-group mt-3">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="alert" class="alert alert-success mt-4 d-none" role="alert">
+            Your message has been sent!
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        <p>&copy; 
+            Rama Ramdani - Web Design Programming
+            2024 Hotel Horison.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

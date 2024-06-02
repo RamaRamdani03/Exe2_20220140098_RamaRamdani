@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hotel Horison</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+    /* Atur padding untuk konten utama */
+    .container {
+        padding: 20px;
+        position: relative;
+        min-height: 100vh; /* Pastikan setidaknya setinggi layar */
+    }
+
+    /* Atur margin untuk judul */
+    h1 {
+        margin-bottom: 20px;
+        font-size: 70px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+    }
+
+    /* Gaya untuk paragraf */
+    p {
+        line-height: 1.6;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+    }
+
+    /* Atur gaya untuk footer */
+    footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    /* Gaya untuk navbar */
+    .navbar {
+        background-color: #343a40;
+    }
+
+    /* Gaya untuk judul navbar */
+    .navbar-brand {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    /* Gaya untuk link navbar */
+    .navbar-nav .nav-link {
+        color: #ffffff;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+
+    /* Hover efek untuk link navbar */
+    .navbar-nav .nav-link:hover {
+        color: #f8f9fa;
+    }
+
+    /* Gaya untuk gambar */
+    .img-fluid {
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 200%;
+        height: 100px;
+    }
+
+    /* Tambahan CSS untuk responsivitas */
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .img-container img {
+        width: 630px;
+        height: 500px;
+        margin-left: 330px; 
+    }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-hotel"></i> Hotel Horison
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto"> <!-- Menambahkan kelas ms-auto di sini -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rooms.html">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Reservation</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="mb-4">About Us - Horison</h1>
+                <p> Metropolitan Golden Management memiliki pengalaman luas selama lebih dari 21 tahun dalam manajemen hotel. Pendekatan kami 
+                    memadukan standar internasional dengan kekayaan budaya lokal, menciptakan pengalaman perhotelan yang unik dan otentik. 
+                    Kami berkomitmen untuk mengutamakan penggunaan produk dalam negeri dan mendorong pengembangan sumber daya manusia lokal.</p>
+                <p>
+                    Hingga saat ini, Metropolitan Golden Management dengan bangga mengoperasikan 67 hotel, menawarkan total sekitar 6700 kamar. 
+                    Seiring dengan pertumbuhan kami, kami sangat gembira mengumumkan rencana pengembangan lebih dari 10 hotel tambahan. 
+                    Portofolio kami yang beragam mencakup empat merek hotel berbeda di bawah manajemen kami:
+                     Horison Grand, Horison Ultima, Horison, @Hom Hotel, Aziza Hotel, Horison Express (Horex), 
+                     Erbe Style, Arcadia, Luxcamp, dan beberapa hotel lainnya di bawah payung merek Horison.
+                </p>
+            </div>
+            <div class="col-md-4 img-container">
+                <img src="https://myhorison.com/v2/images/about-us-pic-new.jpg" class="img-fluid" alt="Hotel About Image">
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        <p>&copy; 
+            Rama Ramdani - Web Design Programming
+            2024 Hotel Horison.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
